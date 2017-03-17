@@ -345,17 +345,24 @@ td.views-field .point-label {
 }
 
 
+/* Branding */
+
+#branding {
+    padding: 0 0 0 25px;
+}
+
+
 /* Library Menu */
 
 #block-menu-menu-library-menu1 h2 {
-  color: #a3b9e0;
+  color: #4f5f7b;
   text-transform: capitalize;
   font-size: 19px;
   padding: 26px 18px 3px;
 }
 
 #block-menu-menu-library-menu1 {
-  background: #2E3848;
+  background: #e8e8e8 /*#2E3848*/;
   padding: 12px 0 40px;
 }
   
@@ -367,7 +374,6 @@ td.views-field .point-label {
 .library-menu ul.menu li.leaf a,
 .library-menu ul.menu li.leaf a:active,
 .library-menu ul.menu li.leaf a:visited {
-  color: #fff;
   display: block;
   padding: 6px 18px;
 }
@@ -383,4 +389,85 @@ td.views-field .point-label {
 
 .content-style {
   border: none;
+}
+
+#main-content {
+}
+
+/* forms */
+
+.button-float {
+    display: inline-block;
+    margin-top: -82px;
+    margin-right:75px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+
+/* tables */
+
+.views-table { 
+    max-width: 1200px;
+}
+
+th, thead, thead th {
+    background-color: transparent;
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+    color: #444;
+}
+
+td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+
+td.views-field-field-badge-image img {
+    max-width: 200px;
+    height: auto;
+}
+
+
+/* entity entries */
+
+.entity section {
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+
+.entity section:before {
+    display: table;
+    content: " ";
+}
+
+.entity section:after {
+    clear: both;
+}
+
+.entity .field-label {
+    width :175px;
+    margin-right: 20px;
+    float: left;
 }
