@@ -396,45 +396,66 @@ h1#page-title, .in-maintenance h1#page-title {
 /* Library Menu */
 
 #block-menu-menu-library-menu1 h2 {
-  color: #4f5f7b;
-  text-transform: capitalize;
-  font-size: 19px;
-  padding: 26px 18px margin-top: 40px;3px;
+    color: #4f5f7b;
+    text-transform: capitalize;
+    font-size: 19px;
+    padding: 26px 18px 14px;
 }
 
 #block-menu-menu-library-menu1 {
     background: #eaeaea /*#2E3848*/;
     padding: 0 0 20px;
-    margin-top: 40px;
+    margin-top: 25px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
 }
   
 .library-menu ul.menu li.leaf {
-  list-style-image: none;
-  list-style-type: none;
+    list-style-image: none;
+    list-style-type: none;
 }
 
 .library-menu ul.menu li.leaf a,
 .library-menu ul.menu li.leaf a:active,
 .library-menu ul.menu li.leaf a:visited {
-  display: block;
-  padding: 6px 18px;
+    display: block;
+    padding: 6px 18px;
 }
 
     
 .lmenu-item-810:before {
-  content: "\f09b";
-  font-family: FontAwesome;
+    content: "\f09b";
+    font-family: FontAwesome;
 }
 
 
 /* Main content */
 
 .content-style {
-  border: none;
+    border: none;
 }
 
-#main-content {
+#main-content .content-margin {
+    margin: 25px 10px;
 }
+
+.rc-6 #main-content .content-style {
+    min-height: 450px;
+    padding: 0;
+}
+
+#main-content .content-style header {
+    padding: 15px 30px 5px;
+    background: #dadada;
+    border-radius: 6px 6px 0 0;
+    margin: 0 0 15px;
+}
+
+#main-content .content-style #content {
+    padding: 15px 30px 25px;
+}
+
 
 /* forms */
 
@@ -482,8 +503,8 @@ input[type=submit],
 }
 
 .button-float {
-    margin-top: -82px;
-    margin-right:75px;
+    margin-top: -120px;
+    margin-right: 5px;
 }
 
 input[value=Remove] {
