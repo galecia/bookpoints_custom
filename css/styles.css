@@ -10,6 +10,10 @@
 
 @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
 
+body {
+    background: #e8e8e8;
+}
+
 .form-item-program label{
   font-size:22px !important;
   margin-bottom:10px;
@@ -110,39 +114,41 @@
 }
 
 
-
-#tab-container
-{
-   float: left;
-   margin: 0;
+#tab-container {
+    float: left;
+    margin: 0;
 }
-#tab-container ul
-{
-   list-style: none;
-   text-align: center;
+
+#tab-container ul {
+    list-style: none;
+    text-align: center;
 
 }
+
 #tab-container ul li {
     margin-top: 2px;
     position: relative;
     display: block;
     padding: 10px 15px;   
+    font-size: 20px;
 }
+
 #tab-container ul li a,
-#tab-container ul li a:visited
-{
-   text-decoration: none;
-   color: #666;
-   display: block;
-   padding: 15px 5px;
+#tab-container ul li a:visited {
+    text-decoration: none;
+    color: #666;
+    display: block;
+    padding: 15px 5px;
 }
+
 #tab-container ul li:hover {
-   cursor:pointer;
+    cursor:pointer;
 }
-#tab-container ul li a:hover
-{
-   color: #000;
+
+#tab-container ul li a:hover {
+    color: #000;
 }
+
 #tab-container ul li.selected {
     color: #fff;
     background-color: #337ab7;
@@ -161,6 +167,7 @@
     border-radius: 4px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
+    font-weight: bold;
 }
 
 .centered-text {
@@ -200,16 +207,16 @@
 
 
 #reader-dashboard .region-three-33-third h2 {
-    text-align: left !important;
-text-align: left;
-font-size: 43px;
-color: #6c91d2;
-border-radius: 105px;
-background: #e7e7e7;
-padding: 66px 33px;
-clear: both;
-max-width: 125px;
-margin-top: -98px;
+    text-align: center !important;
+    font-size: 43px;
+    color: #6c91d2;
+    border-radius: 110px;
+    background: #e7e7e7;
+    padding: 66px 4px;
+    clear: both;
+    max-width: 175px;
+    margin-top: -98px;
+    whitespace: nowrap;
 }
 
 .badges-container {
@@ -403,7 +410,7 @@ h1#page-title, .in-maintenance h1#page-title {
 }
 
 #block-menu-menu-library-menu1 {
-    background: #eaeaea /*#2E3848*/;
+    background: #f2f2f2 /*#2E3848*/;
     padding: 0 0 20px;
     margin-top: 25px;
     border-radius: 6px;
@@ -474,6 +481,9 @@ fieldset legend {
 
 
 
+td.views-field-edit-link a,
+td.views-field-edit-node a,
+.add-reader a,
 button, 
 .my-views-filter-reset, 
 input[type=submit],
@@ -512,6 +522,18 @@ input[value=Remove] {
     border-color: #d43f3a;
 }
 
+.activity-button, 
+.add-reader a {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+.activity-button {
+    width: 83.8px;
+    height: 43px;
+}
+
 .resizable-textarea .grippie,
 textarea {
     max-width: 800px;
@@ -521,8 +543,24 @@ textarea {
     margin-top: 17px;
 }
 
+td.views-field-edit-node a, 
+td.views-field-edit-link a {
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;   
+}
+
 .my-views-filter-reset {
     padding: 9px 16px;
+}
+
+.form-item.form-item-codes {
+    margin-bottom: 0;
+}
+
+.region-three-33-third h6 {
+    margin-top: 25px;
+    margin-bottom:5px;
 }
 
 input.form-text, 
@@ -576,6 +614,7 @@ input.form-file {
     height: auto;
     padding: 10px 12px;
 }
+
 
 
 /* tables */
@@ -658,3 +697,70 @@ td.views-field-field-badge-image img {
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
+
+
+/* Ratings */
+#edit-stars {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+#edit-stars * {
+    font-size: 1.2em;
+}
+#edit-stars input {
+    display: none;
+}
+#edit-stars input + label {
+    /* only enough room for the star */
+    display: inline-block;
+    overflow: hidden;
+    text-indent: 9999px;
+    width: 28px;
+    height: 28px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+#edit-stars input + label:before {
+    font-family: FontAwesome;
+    display: inline-block;
+    text-indent: -9999px;
+    content: "\f006";
+    color: #888;
+}
+#edit-stars input:checked ~ label:before, 
+#edit-stars input.star-add ~ label:before, 
+#edit-stars input + label:hover + label:before, 
+#edit-stars input + label:hover:before {
+    font-family: FontAwesome;
+    content: "\f005";
+    color: #e52;
+}
+#edit-stars .star-cb-clear + label {
+    text-indent: -9999px;
+    width: .5em;
+    margin-left: -.5em;
+}
+#edit-stars .star-cb-clear + label:before {
+    width: .5em;
+}
+#edit-stars:hover  input + label:before {
+    font-family: FontAwesome;
+    content: "\f006";
+    color: #888;
+}
+#edit-stars:hover input.star-add + label:hover ~ label:before, 
+#edit-stars:hover input + label:hover:before {
+    font-family: FontAwesome;
+    content: "\f005";
+    color: #e52;
+}
+
+
+/* Program management views */
+
+th.views-field-edit-node, 
+th.views-field-edit-link {
+    font-size: 0;
+}
+
+    
