@@ -449,18 +449,35 @@ h1#page-title, .in-maintenance h1#page-title {
 
 .rc-6 #main-content .content-style {
     min-height: 450px;
+    background-color: transparent;
     padding: 0;
+    -webkit-border: 0;
+    -moz-border: 0;
+    -khtml-border: 0;
+    border-radius: 0;
+}
+
+.rc-6 #main-content .content-style #breadcrumb {
+    display: none;
 }
 
 #main-content .content-style header {
     padding: 15px 30px 5px;
     background: #dadada;
+    -webkit-border: 6px 6px 0 0;
+    -moz-border: 6px 6px 0 0;
+    -khtml-border: 6px 6px 0 0;
     border-radius: 6px 6px 0 0;
-    margin: 0 0 15px;
+    margin: 0;
 }
 
 #main-content .content-style #content {
     padding: 15px 30px 25px;
+    background: #fff;
+    -webkit-border: 0 0 6px 6px;
+    -moz-border: 0 0 6px 6px;
+    -khtml-border: 0 0 6px 6px;
+    border: 0 0 6px 6px;
 }
 
 
@@ -546,8 +563,8 @@ textarea {
 td.views-field-edit-node a, 
 td.views-field-edit-link a {
     color: #fff;
-    background-color: #f0ad4e;
-    border-color: #eea236;   
+    background-color: #7d7d7d;
+    border-color: #adacab;
 }
 
 .my-views-filter-reset {
