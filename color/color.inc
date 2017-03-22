@@ -16,8 +16,6 @@ $info = array(
     'borderstrong'    => t('Border strong'),
     'fieldset'        => t('Fieldset'),
     'fieldsetborder'  => t('Fieldset border'),
-    'headerwrapper'   => t('Header wrapper'),
-    'sitenamea'       => t('Site Name'),
   ),
   'schemes' => array(
     'default' => array(
@@ -38,8 +36,6 @@ $info = array(
         'borderstrong'    => '#c4c4c4',
         'fieldset'        => '#fbfbfb',
         'fieldsetborder'  => '#e1e1e2',
-        'headerwrapper'   => '#c2e7f8',
-        'sitenamea'       => '#ffffff',
       ),
     ),
     // 'default' => array(
@@ -80,8 +76,6 @@ $info = array(
         'borderstrong'    => '#d2c8aa',
         'fieldset'        => '#fdfdfb',
         'fieldsetborder'  => '#dad6c9',
-        'headerwrapper'   => '#c2e7f8',
-        'sitenamea'       => '#ffffff',
       ),
     ),
     'green2' => array(
@@ -102,8 +96,6 @@ $info = array(
         'borderstrong'    => '#d2c8aa',
         'fieldset'        => '#fdfdfb',
         'fieldsetborder'  => '#dad6c9',
-        'headerwrapper'   => '#c2e7f8',
-        'sitenamea'       => '#ffffff',
       ),
     ),
     'purple' => array(
@@ -124,7 +116,6 @@ $info = array(
         'borderstrong'    => '#d9a3b7',
         'fieldset'        => '#fefafb',
         'fieldsetborder'  => '#f7d6e2',
-        'sitenamea'       => '#ffffff',
       ),
     ),
     'red' => array(
@@ -145,8 +136,6 @@ $info = array(
         'borderstrong'    => '#e2bdae',
         'fieldset'        => '#fefbfa',
         'fieldsetborder'  => '#f7dad6',
-        'headerwrapper'   => '#c2e7f8',
-        'sitenamea'       => '#ffffff',
       ),
     ),
     'yellow' => array(
@@ -167,8 +156,6 @@ $info = array(
         'borderstrong'    => '#dcd093',
         'fieldset'        => '#fbfbf8',
         'fieldsetborder'  => '#ddd7b6',
-        'headerwrapper'   => '#c2e7f8',
-        'sitenamea'       => '#ffffff',
       ),
     ),
   ),

@@ -193,8 +193,7 @@ function bookpoints_custom_radio_before_element($variables) {
   // $element['#attributes']= array("test");
   $checkbox .= drupal_attributes($element['#attributes']) . ' />';
   // $checkbox .= '</div></div>';
-  $checkbox .= "<label class=\"stars\" for=\"" . $element['#title']. "\">" . $element['#title']. "</label>";
-  //unset($element['#title']);
+  unset($element['#title']);
   return $checkbox;
 }
 function bookpoints_custom_radios_before_element($variables){
@@ -202,7 +201,7 @@ function bookpoints_custom_radios_before_element($variables){
   $element = $variables['element'];
    $attributes = array();
    if (isset($element['#id'])) {
-     //$attributes['id'] = $element['#id'];
+     $attributes['id'] = $element['#id'];
    }
    $attributes['class'][] = 'form-radios col-xs-12';
    if (!empty($element['#attributes']['class'])) {
